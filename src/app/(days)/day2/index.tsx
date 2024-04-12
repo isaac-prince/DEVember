@@ -1,11 +1,19 @@
 import React from "react";
-import { Text } from "react-native";
+import { Button, Text,View } from "react-native";
+import { Link, Stack } from "expo-router";
 
 
-export default  function DayDetailsScreen(){
+export default function DayDetailsScreen(){
     return(
-        <Text>
-                day detail screen
-        </Text>
+        <View>
+            <Stack.Screen options={{title: "Day2: Onboarding"}}/>
+            <Text> day detail screen </Text>
+
+            <Link href="/day2/onboarding" asChild>
+                <Button title="Go to onboarding"/>
+            </Link>
+            
+        </View>
+  
     )
 }
