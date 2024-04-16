@@ -20,7 +20,7 @@ export default function EditorScreen(){
                 <Pressable onPress={()=> setTab("edit")} style={[styles.tab, {backgroundColor: tab==='edit' ? "lightgray" : "whitesmoke"}]}>
                 <Text style={styles.tabText}>Edit</Text>
                 </Pressable >
-                <Pressable onPress={()=> setTab("preview")} style={[styles.tab, {backgroundColor: tab==='preview' ? "lightgray" : "whitesmoke"}]}>
+                <Pressable onPress={()=> setTab("preview")} style={[styles.tab, {backgroundColor: tab==='preview' ? "gray" : "whitesmoke"}]}>
                 <Text style={styles.tabText}>Preview</Text>
                 </Pressable>
              </View>
